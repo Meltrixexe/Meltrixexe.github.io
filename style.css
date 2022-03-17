@@ -1,0 +1,382 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 60px;
+    
+}
+nav{
+    width: 100%;
+    height: 100%;
+}
+.boton{
+    position: relative;
+    left: 20px;
+    margin-top: 20px;
+    background: none;
+    color: black;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.nav-box{
+    position: fixed;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    
+
+    width: 100%;
+    height: 100%;
+    left: -2000px;
+    transition: 0.2s;
+    
+
+}
+.active{
+    left: 0px;
+}
+
+.nav-box li{
+    list-style: none;
+}
+.nav-box li a{
+    text-decoration: none;
+}
+.nav-items{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 20%;
+    
+
+}
+.nav-items a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    font-family: 'Spartan';
+    font-size: 15px;
+    color: black;
+    letter-spacing: 2px;
+}
+.nav-items a:hover{
+    background-color: rgb(175, 175, 175);
+
+}
+
+.home{
+  
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.video-bc{
+    top: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+}
+.items{
+
+    height: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+.items-seleccion{
+    
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reservas a{
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-family: 'Spartan';
+    padding: 10px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+.reservas a:hover{
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+}
+.pedidos a{
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-family: 'Spartan';
+    padding: 10px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+.pedidos a:hover{
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+}
+
+.cartas-y-demas{
+    position: relative;
+   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartas-y-demas label{
+    font-family: 'Spartan';
+    color: black;
+    font-size: 15px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+
+
+.grid{
+    
+    width: 60%;
+    margin-top: 200px;
+    margin-bottom: 300px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-auto-rows: 350px;
+}
+
+@media(max-width: 613px){
+    .grid{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    }
+    
+}
+    
+
+.grid-items{
+    text-align: center;
+    margin: 20px;
+    border: 1px solid black;
+    transition: 0.5s;
+   
+}
+.grid-items img{
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+    
+}
+.grid-items a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Spartan';
+    font-size: 13px;
+    padding-top: 10px;
+    
+    
+}
+.grid-items:hover{
+    
+    border: none;
+}
+
+.about-us{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+.about-us label{
+    top: 100px;
+    color: white;
+    font-family: 'Spartan';
+    font-size: 15px;
+    letter-spacing: 2px;
+
+}
+
+.text-socials{
+    
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+
+}
+.text{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+.text p{
+    font-family: 'Spartan';
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border: 0.5px solid white;
+    padding: 20px;
+}
+.social{
+ 
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.maps{
+    width: 300px;
+    height: 100%;
+  
+}
+.maps-seccion{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.social-icon{
+    width: 300px;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.social-icon label{
+    border-left: 1px solid white;
+    padding: 10px;
+}
+
+.social-icon a{
+    text-decoration: none;
+}
+.social-icon i{
+    margin: 50px;
+   color: white;
+   font-size: 50px;
+   transition: 0.2s;
+}
+.social-icon i:hover{
+    font-size: 60px;
+}
+.footer{
+    width: 100%;
+  
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: white;
+    padding: 20px;
+
+}
+
+/*----------------------RESERVAS----------------------------*/
+.reservas{
+ 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.reservas label{
+    font-family: 'Spartan';
+    color: black;
+    padding: 50px;
+    top: 50px;
+}
+.horarios{
+    font-family: 'Spartan';
+    font-size: 10px;
+    text-align: center;
+    margin: 30px;
+    border: 1px solid black;
+}
+.input-box{
+   
+    width: 95%;
+    height: 100%;
+}
+.input-box label{
+    font-size: 15px;
+    font-family: 'Spartan';
+    margin: 50px;
+    
+}
+
+.input-mod{
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 30px;
+    transition: 0.2s;
+    
+}
+.number{
+    width: 80px;
+}
+.input-submit{
+    background: none;
+    margin: 50px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    color: black;
+    font-family: 'Spartan';
+    cursor: pointer;
+}
+.input-mod:focus{
+    outline: none;
+    padding: 10px;
+    border-left: 1px solid black;
+}
+
+.input-box form{
+
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
